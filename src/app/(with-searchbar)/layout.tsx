@@ -1,4 +1,5 @@
 import React from "react";
+import Searchbar from "./_component/SearchBar";
 
 interface Props {
   children: React.ReactNode;
@@ -7,7 +8,7 @@ interface Props {
 export default function layout({ children }: Props) {
   return (
     <div>
-      <div>Searchbar Layout</div>
+      <Searchbar />
       {children}
     </div>
   );
