@@ -1,11 +1,7 @@
-import React from "react";
-import Searchbar from "./_component/SearchBar";
+import Searchbar from "@/components/searchbar";
+import { ReactNode } from "react";
 
-interface Props {
-  children: React.ReactNode;
-}
-
-export default function layout({ children }: Props) {
+export default function Layout({ children }: { children: ReactNode }) {
   return (
     <div>
       <Searchbar />
