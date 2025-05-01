@@ -1,6 +1,7 @@
 import style from "./review-item.module.css";
 import { ReviewData } from "@/types";
 import React from "react";
+import ReviewItemDeleteButton from "./review-item-delete-button";
 
 export default function ReviewItem({
   id,
@@ -25,7 +26,7 @@ export default function ReviewItem({
 
       <div className={style.content}>{content}</div>
       <div>
-        <div className={style.delete_btn}>삭제하기</div>
+        <ReviewItemDeleteButton reviewId={id} movieId={movieId} />
       </div>
     </div>
   );
